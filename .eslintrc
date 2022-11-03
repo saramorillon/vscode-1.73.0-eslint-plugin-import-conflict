@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "import/order": [
+      "warn",
+      { "groups": ["index", "parent", "sibling", ["builtin", "external"]] }
+    ]
+  }
+}
